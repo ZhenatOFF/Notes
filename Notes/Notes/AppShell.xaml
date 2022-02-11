@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Notes.AppShell"
+       xmlns:views="clr-namespace:Notes.Views">
+
+
+    <TabBar Shell.TabBarBackgroundColor="Blue">
+        <Tab 
+            Title="Notes" Icon="note3.png">
+            <ShellContent
+                ContentTemplate="{DataTemplate views:NotesPage}">
+            </ShellContent>
+        </Tab>
+        <Tab Shell.TabBarBackgroundColor="Green"
+            Title="To-do" Icon="todo.png">
+            <ShellContent
+                ContentTemplate="{DataTemplate views:TodoPage}">
+            </ShellContent>
+        </Tab>
+        <Tab Shell.TabBarBackgroundColor="Red" 
+            Title="Payment"
+             Icon="payment.png">
+            <ShellContent 
+                ContentTemplate="{DataTemplate views:PaymentPage}">
+            </ShellContent>
+        </Tab>
+
+    </TabBar>
+</Shell>
